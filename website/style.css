@@ -10,7 +10,10 @@ html, body{
     padding: 20px 10px;
     box-sizing: border-box;
 }
-
+.main-content{
+    padding: 10px;
+    box-sizing: border-box;
+}
 .main-title{
     font-size: large;
     font-weight: bold;
@@ -24,8 +27,4 @@ html, body{
 }
 .main-title > span:nth-child(3){
     color: green;
-}
-.content-frame{
-    padding: 10px;
-    box-sizing: border-box;
 }

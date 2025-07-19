@@ -1,0 +1,13 @@
+.ide-frame{
+    display: flex;
+}
+
+.ide-frame > :first-child{
+    width: 70%;
+    border-right: 1px solid gray;
+}
+
+.ide-content-code, .ide-content-files{
+    padding: 10px;
+    box-sizing: border-box;
+}
