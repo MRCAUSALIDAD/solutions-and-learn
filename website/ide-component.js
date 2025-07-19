@@ -3,15 +3,18 @@
 class IDEComponente extends HTMLElement {
 
     connectedCallback(){
+        const codeContent = this.querySelector('[slot="code"]')?.innerHTML || '';
+        const filesContent = this.querySelector('[slot="files"]')?.innerHTML || '';
 
         this.innerHTML = `
         <frame-component>
             <div class="ide-frame">
                 <div class="ide-content-code">
-                    content code
+                    ${codeContent}
                 </div>
                 <div class="ide-content-files">
-                    tree list files and folders...
+                    
+                    ${filesContent}
                 </div>
             </div>
         </frame-component>

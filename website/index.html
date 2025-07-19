@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,23 @@
     <link rel="stylesheet" href="ide-style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
         <frame-component>
             <div class="main-content">
-                <p class="main-title">BIENVENIDO/A A MIS SOLUCIONES Y APRENDIZAJE DE <span>MATEMÁTICAS</span>, <span>FÍSICA</span> Y <span>PROGRAMACIÓN</span></p>
-        <ide-component></ide-component>
-        </div>
+                <p class="main-title">BIENVENIDO/A A MIS SOLUCIONES Y APRENDIZAJE DE <span>MATEMÁTICAS</span>,
+                    <span>FÍSICA</span> Y <span>PROGRAMACIÓN</span></p>
+                
+                <ide-component>
+                    <div slot="code">
+                        content code
+                    </div>
+                    <div slot="files">
+                        tree list files and folders...
+                    </div>
+                </ide-component>
+            </div>
         </frame-component>
     </div>
 
@@ -22,4 +33,5 @@
     <script src="frame-component.js"></script>
     <script src="ide-component.js"></script>
 </body>
+
 </html>
