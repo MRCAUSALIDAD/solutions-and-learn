@@ -1,6 +1,6 @@
 
 
-class IDEComponente extends HTMLElement {
+class IDEComponent extends HTMLElement {
 
     connectedCallback(){
         const codeContent = this.querySelector('[slot="code"]')?.innerHTML || '';
@@ -24,4 +24,4 @@ class IDEComponente extends HTMLElement {
 
 }
 
-customElements.define('ide-component', IDEComponente);
+customElements.define('ide-component', IDEComponent);
