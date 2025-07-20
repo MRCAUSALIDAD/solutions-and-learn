@@ -1,0 +1,51 @@
+tree-component ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 14px;
+    border-left: 1px solid #ccc;
+}
+
+tree-component li {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    padding: 2px 4px 2px 18px;
+    cursor: pointer;
+}
+
+tree-component li::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+tree-component li.folder::before {
+    background-image: url('folder-icon.svg');
+}
+
+tree-component li.file::before {
+    background-image: url('file-icon.svg');
+}
+
+tree-component li.collapsed > ul {
+    display: none;
+}
+
+tree-component li.selected {
+    background-color: #d0e4ff;
+    border-radius: 4px;
+}
+
+tree-component span.selected {
+    background-color: #cce5ff;
+    border-radius: 4px;
+    padding: 2px 4px;
+    display: inline-block;
+}
+

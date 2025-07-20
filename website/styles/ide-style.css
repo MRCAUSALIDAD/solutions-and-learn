@@ -11,3 +11,24 @@
     padding: 10px;
     box-sizing: border-box;
 }
+
+.ide-content-code {
+    display: flex;
+    font-family: monospace;
+    background: #1e1e1e;
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+.line-numbers {
+    background: #2e2e2e;
+    color: #888;
+    padding: 4px 8px;
+    text-align: right;
+}
+
+.code-content {
+    white-space: pre;
+    padding: 4px 8px;
+    flex: 1;
+}
