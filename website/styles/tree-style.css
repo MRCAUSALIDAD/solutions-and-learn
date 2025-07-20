@@ -1,3 +1,10 @@
+tree-component {
+    display: block;
+    height: 100%;
+    overflow-y: auto;        /* 🔥 Scroll vertical interno */
+    overflow-x: hidden;
+}
+
 tree-component ul {
     list-style: none;
     margin: 0;

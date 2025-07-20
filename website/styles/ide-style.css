@@ -32,3 +32,11 @@
     padding: 4px 8px;
     flex: 1;
 }
+
+.ide-content-files {
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;        /* 🔥 Scroll vertical */
+    overflow-x: hidden;      /* Evita desplazamiento horizontal innecesario */
+    height: 100%;            /* Ocupar todo el alto disponible */
+}
