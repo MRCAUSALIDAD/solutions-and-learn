@@ -13,7 +13,6 @@ class IDEComponente extends HTMLElement {
                     ${codeContent}
                 </div>
                 <div class="ide-content-files">
-                    
                     ${filesContent}
                 </div>
             </div>
