@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="frame-style.css">
-    <link rel="stylesheet" href="ide-style.css">
+    <link rel="stylesheet" href="./styles/frame-style.css">
+    <link rel="stylesheet" href="./styles/ide-style.css">
+    <link rel="stylesheet" href="./styles/tree-style.css">
     <title>Document</title>
 </head>
 
@@ -21,15 +22,27 @@
                     <div slot="code">
                         content code
                     </div>
-                    <div slot="files"></div>
+                    <div slot="files">
+                        <!-- Tree component-->
+                    </div>
                 </ide-component>
             </div>
         </frame-component>
     </div>
 
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="frame-component.js"></script>
-    <script src="ide-component.js"></script>
+    <script src="./components/frame-component.js"></script>
+    <script src="./components/ide-component.js"></script>
+    <script src="./components/tree-component.js"></script>
 </body>
 
 </html>
