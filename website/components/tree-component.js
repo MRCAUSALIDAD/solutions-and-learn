@@ -52,21 +52,34 @@ class TreeComponent extends HTMLElement {
                 li.appendChild(childUl);
 
             } else {
-                li.classList.add('file');
+                  li.classList.add('file');
 
-                labelSpan.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    this.clearSelection();
-                    labelSpan.classList.add('selected');
+    labelSpan.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.clearSelection();
+        labelSpan.classList.add('selected');
 
-                    this.dispatchEvent(new CustomEvent('file-selected', {
-                        bubbles: true,
-                        detail: {
-                            label: node.label,
-                            content: node.content || '(archivo vacío)'
-                        }
-                    }));
-                });
+        fetch(node.path)
+            .then(res => res.text())
+            .then(content => {
+                this.dispatchEvent(new CustomEvent('file-selected', {
+                    bubbles: true,
+                    detail: {
+                        label: node.label,
+                        content: content
+                    }
+                }));
+            })
+            .catch(() => {
+                this.dispatchEvent(new CustomEvent('file-selected', {
+                    bubbles: true,
+                    detail: {
+                        label: node.label,
+                        content: '(error al cargar archivo)'
+                    }
+                }));
+            });
+    });
             }
 
 

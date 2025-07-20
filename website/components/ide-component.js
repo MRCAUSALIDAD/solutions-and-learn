@@ -6,10 +6,10 @@ class IDEComponent extends HTMLElement {
         const codeContent = this.querySelector('[slot="code"]')?.innerHTML || '';
 
         this.innerHTML = `
+        <div class="ide-content">
         <frame-component>
             <div class="ide-frame">
                 <div class="ide-content-code">
-                    <div class="line-numbers"></div>
                     <pre class="code-content">${codeContent}</pre>
                 </div>
                 <div class="ide-content-files">
@@ -17,9 +17,8 @@ class IDEComponent extends HTMLElement {
                 </div>
             </div>
         </frame-component>
+        </div>
         `;
-
-        this.updateLineNumbers(codeContent);
 
         Promise.resolve().then(() => {
             const tree = this.querySelector('#miTree');
@@ -33,17 +32,6 @@ class IDEComponent extends HTMLElement {
                 });
             }
         });
-    }
-
-    updateLineNumbers(content) {
-        const lines = content.split('\n').length || 1;
-        const lineNumbersDiv = this.querySelector('.line-numbers');
-        if (lineNumbersDiv) {
-            lineNumbersDiv.innerHTML = '';
-            for (let i = 1; i <= lines; i++) {
-                lineNumbersDiv.innerHTML += i + '<br>';
-            }
-        }
     }
 
     loadCode(content) {

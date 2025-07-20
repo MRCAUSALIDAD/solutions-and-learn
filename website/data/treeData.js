@@ -1,12 +1,12 @@
 export const treeData = [
-    { label: 'README.md', content: 'Este es el README del proyecto.' },
+    { label: 'README.md', path: 'files/README.md' },
     { label: 'math', children: [
-        { label: 'prueba1.tex', content: '\\documentclass{article}\n\\begin{document}\nHola, mundo en LaTeX.\n\\end{document}' }
+        { label: 'prueba1.tex', path: 'files/math/prueba1.tex' }
     ]},
     { label: 'physics', children: [
-        { label: 'prueba1.tex', content: '% Física básica\nF=ma'
-    }]},
+        { label: 'prueba1.tex', path: 'files/physics/prueba1.tex' }
+    ]},
     { label: 'programming', children: [
-        { label: 'prueba1.cpp', content: '#include <iostream>\nint main() {\n    std::cout << "Hola mundo";\n    return 0;\n}' }
+        { label: 'prueba1.cpp', path: 'files/programming/prueba1.cpp' }
     ]}
 ];
