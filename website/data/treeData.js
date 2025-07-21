@@ -57,7 +57,9 @@ export const treeData = [
 
     ]},
     { label: 'programming', children: [,
-        {label:'', children:[{ label: 'prueba1.cpp', path: 'files/programming/prueba1.cpp' }]},
-        {label:'', children:[{label:'', path:''}]}
+        {label:'C++', children:[{ label: 'prueba1.cpp', path: 'files/programming/prueba1.cpp' }]},
+        {label:'Python', children:[{label:'', path:''}]},
+        {label:'JavaScript', children:[{label:'', path:''}]},
+        {label:'Java', children:[{label:'', path:''}]},
     ]}
 ];

@@ -1,7 +1,7 @@
 tree-component {
     display: block;
     height: 100%;
-    overflow-y: auto;        /* 🔥 Scroll vertical interno */
+    overflow-y: auto;       
     overflow-x: hidden;
 }
 

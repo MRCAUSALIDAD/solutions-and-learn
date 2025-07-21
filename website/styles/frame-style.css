@@ -1,30 +1,41 @@
-.frame{
+.frame {
     border: 4px solid rgb(177, 177, 177);
     height: 100%;
     box-shadow: 3px 6px 1px 1px rgb(0 0 0 / 1);
+    display: flex;
+    flex-direction: column;
 }
 
-.bar{
-    top:0;
+.bar {
+    top: 0;
     height: 25px;
     width: 100%;
     background-color: gray;
     padding: 5px 10px;
     box-sizing: border-box;
-
 }
-.content-btns{
+
+.content-btns {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.btn{
+
+.btn {
     margin-left: 10px;
     width: 15px;
     height: 15px;
     background-color: rgb(141, 141, 141);
     box-shadow: 1px 2px 1px 0px rgb(81, 81, 81);
     border: 2px ridge rgb(96, 96, 96);
+    box-sizing: border-box;
+}
+
+.content-frame {
+    flex: 1;                  
+    overflow-y: auto;         
+    overflow-x: hidden;       
+    padding: 10px;            
     box-sizing: border-box;
 }

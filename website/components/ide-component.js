@@ -13,7 +13,7 @@ class IDEComponent extends HTMLElement {
                     <pre class="code-content">${codeContent}</pre>
                 </div>
                 <div class="ide-content-files">
-                    <tree-component id="miTree"></tree-component>
+                    <tree-component id="ideTree"></tree-component>
                 </div>
             </div>
         </frame-component>
@@ -21,9 +21,8 @@ class IDEComponent extends HTMLElement {
         `;
 
         Promise.resolve().then(() => {
-            const tree = this.querySelector('#miTree');
+            const tree = this.querySelector('#ideTree');
             if (tree) {
-                console.log(treeData)
                 tree.data = treeData;
 
                 tree.addEventListener('file-selected', (e) => {
