@@ -1,0 +1,51 @@
+.carrousel-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carrousel-videos {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 10px;
+}
+
+.content-video {
+    min-width: 180px;   /* antes 120px */
+    height: 270px;      /* antes 180px */
+    background-color: black;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease;
+}
+
+.content-video:hover {
+    transform: scale(1.05);
+}
+
+.btn-arrow {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.carrousel-track {
+    overflow: hidden;
+    flex: 1;
+}
+
+.carrousel-track-inner {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 10px;
+}

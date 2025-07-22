@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/frame-style.css">
     <link rel="stylesheet" href="./styles/ide-style.css">
     <link rel="stylesheet" href="./styles/tree-style.css">
+    <link rel="stylesheet" href="./styles/video-style.css">
     <title>Document</title>
 </head>
 
@@ -15,17 +16,16 @@
     <div class="wrapper">
         <frame-component>
             <div class="main-content">
-                <p class="main-title">WELCOME TO MY SOLUTIONS AND LEARNING OF <span>MATHEMATICS</span>,
+                <video-component></video-component>
+            </div>
+            <p class="main-title">WELCOME TO MY SOLUTIONS AND LEARNING OF <span>MATHEMATICS</span>,
                     <span>PHYSICS</span> AND <span>PROGRAMMING</span></p>
-                
-                <ide-component>
+            <ide-component>
                     <div slot="code">
                         <pre class="code-content">Selecciona un archivo para visualizar su código</pre>
                     </div>
                     <div slot="files"></div>
                 </ide-component>
-            </div>
-            <video-component></video-component>
         </frame-component>
     </div>
 
